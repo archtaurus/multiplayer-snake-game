@@ -1,0 +1,22 @@
+{
+    "name": "snake",
+    "version": "1.0.0",
+    "main": "server.js",
+    "repository": "https://github.com/archtaurus/snake.git",
+    "author": "Zhao Xin <7176466@qq.com>",
+    "license": "MIT",
+    "description": "multiplayer snake game with socket.io",
+    "keywords": [
+        "socket.io",
+        "multiplayer",
+        "snake",
+        "game"
+    ],
+    "scripts": {
+        "start": "npx nodemon server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^4.0.0"
+    }
+}

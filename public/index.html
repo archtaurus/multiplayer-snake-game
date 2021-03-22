@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multiplayer Snake Game</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <h1>Multiplayer Snake Game</h1>
+        <canvas id="canvas"></canvas>
+        <p id="scores">
+            <span id="player1score">3</span>
+            <span id="player2score">3</span>
+        </p>
+        <div id="controller">
+            <button id="up" onclick="client.emit('keydown', 'ArrowUp')">▲</button>
+            <button id="left" onclick="client.emit('keydown', 'ArrowLeft')">◀</button>
+            <button id="right" onclick="client.emit('keydown', 'ArrowRight')">▶</button>
+            <button id="down" onclick="client.emit('keydown', 'ArrowDown')">▼</button>
+        </div>
+        <script src="/socket.io/socket.io.min.js"></script>
+        <script src="/client.js"></script>
+    </body>
+</html>
