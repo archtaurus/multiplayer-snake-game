@@ -14,23 +14,44 @@ body {
     color: #ccc;
     background-color: #333;
 }
+
 h1 {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
+
 canvas {
-    margin-top: 2em;
+    margin-top: 2rem;
     width: 100%;
     max-width: 600px;
     border: 1px solid #ccc;
 }
+
 #scores {
-    margin-top: 2em;
-    max-width: 600px;
     width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-around;
-    gap: 8px;
-    font-size: 1.5em;
+}
+#scores span {
+    width: 5rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.player1 {
+    background-color: #c33;
+}
+.player2 {
+    background-color: #33c;
+}
+.player {
+    background-color: #ccc;
+    color: #333;
+}
+.enemy {
+    background-color: #666;
 }
 
 #controller {
@@ -38,27 +59,11 @@ canvas {
     height: 120px;
     margin-top: 2rem;
     display: none;
-    /* gap: 8px; */
     grid-template-areas:
         '. U U .'
         'L L R R'
         '. D D .';
 }
-#controller button {
-    font-size: 1.5em;
-    border: 2px solid #ccc;
-    background-color: #666;
-    color: #ccc;
-    border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    outline: none;
-}
-#controller button:hover {
-    color: #666;
-    background-color: yellowgreen;
-}
-
 #up {
     grid-area: U;
 }
@@ -74,6 +79,21 @@ canvas {
 .hidden {
     display: none !important;
 }
+#controller button {
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    background-color: #666;
+    color: #ccc;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+}
+#controller button:hover {
+    color: #666;
+    background-color: yellowgreen;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         justify-content: start !important;
@@ -84,22 +104,4 @@ canvas {
     #controller {
         display: grid;
     }
-}
-
-#scores span {
-    padding: 0.5rem 1rem;
-}
-
-.player1 {
-    background-color: #c33;
-}
-.player2 {
-    background-color: #33c;
-}
-.player {
-    background-color: #ccc;
-    color: #333;
-}
-.enemy {
-    background-color: #666;
 }

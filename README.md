@@ -1,12 +1,6 @@
 # Multiplayer Snake Game
 
-Screenshot on PC
-
-![](screenshot_pc.png)
-
-Screenshot on phone
-
-![](screenshot_phone.png)
+A multiplayer snake game based on express and socket.io.
 
 ## Run
 
@@ -21,7 +15,13 @@ firefox http://localhost:8000
 - [X] simple, clear and responsive UI
 - [x] multiplayer and observers
 
+## Screenshots
+
+Screenshot on PC and Phone
+
+![screenshot](screenshot.png)
+
 ## History
 
-- Version 1.0.0a
-  - alpha version
+- Version 1.0.0
+  - first release
